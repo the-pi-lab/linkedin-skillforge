@@ -3,7 +3,7 @@
 <br />
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/the-pi-lab/pi-skillforge/main/docs/assets/banner.png" alt="PI SKILLFORGE - Modular Intelligence &amp; Reasoning Layer for LinkedIn" width="100%" />
+  <img src="https://raw.githubusercontent.com/the-pi-lab/linkedin-skillforge/main/docs/assets/banner.png" alt="PI SKILLFORGE - Modular Intelligence &amp; Reasoning Layer for LinkedIn" width="100%" />
 </p>
 
 # ✦ PI SKILLFORGE
@@ -189,7 +189,7 @@ You don't need heavyweight frameworks, node dependencies, or complex setup scrip
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/the-pi-lab/pi-skillforge.git
+git clone https://github.com/the-pi-lab/linkedin-skillforge.git
 cd pi-skillforge
 ```
 
@@ -401,8 +401,8 @@ python -m unittest discover -s tests -p "test_*.py" -v
 
 **Reason better. Compose freely. Evolve responsibly.**
 
-[![GitHub stars](https://img.shields.io/github/stars/the-pi-lab/pi-skillforge?style=social)](https://github.com/the-pi-lab/pi-skillforge)
-[![GitHub forks](https://img.shields.io/github/forks/the-pi-lab/pi-skillforge?style=social)](https://github.com/the-pi-lab/pi-skillforge)
+[![GitHub stars](https://img.shields.io/github/stars/the-pi-lab/linkedin-skillforge?style=social)](https://github.com/the-pi-lab/linkedin-skillforge)
+[![GitHub forks](https://img.shields.io/github/forks/the-pi-lab/linkedin-skillforge?style=social)](https://github.com/the-pi-lab/linkedin-skillforge)
 
 <br />
 
