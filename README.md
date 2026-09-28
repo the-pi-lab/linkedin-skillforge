@@ -3,7 +3,7 @@
 <br />
 
 <p align="center">
-  <img src="docs/assets/banner.svg" alt="PI SKILLFORGE - Modular Intelligence &amp; Reasoning Layer for LinkedIn" width="100%" />
+  <img src="https://raw.githubusercontent.com/the-pi-lab/pi-skillforge/main/docs/assets/banner.png" alt="PI SKILLFORGE - Modular Intelligence &amp; Reasoning Layer for LinkedIn" width="100%" />
 </p>
 
 # ✦ PI SKILLFORGE
