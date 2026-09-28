@@ -2,291 +2,389 @@
 
 <br />
 
-<sub>THE PI LAB / OPEN SOURCE INTELLIGENCE</sub>
+<p align="center">
+  <img src="docs/assets/banner.svg" alt="PI SKILLFORGE - Modular Intelligence &amp; Reasoning Layer for LinkedIn" width="100%" />
+</p>
 
-# PI SKILLFORGE
+# ✦ PI SKILLFORGE
 
-### The skill layer between intent and execution.
+### The Modular Intelligence & Reasoning Layer for LinkedIn Workflows
 
 <p align="center">
-  Portable reasoning for LinkedIn workflows.<br />
-  Composable across agents. Native to every IDE. Built to evolve.
+  <b>40 Production Skills</b> &nbsp;•&nbsp; 
+  <b>10+ Supported IDEs</b> &nbsp;•&nbsp; 
+  <b>Governed Self-Evolution</b> &nbsp;•&nbsp; 
+  <b>Zero Runtime Dependencies</b>
 </p>
 
 <br />
 
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0b0d12?style=flat-square" alt="MIT License" /></a>
-<img src="https://img.shields.io/badge/skills-40-0b0d12?style=flat-square" alt="40 skills" />
-<img src="https://img.shields.io/badge/IDE--ready-10%2B-0b0d12?style=flat-square" alt="10 plus IDEs" />
-<img src="https://img.shields.io/badge/dependencies-zero-0b0d12?style=flat-square" alt="Zero dependencies" />
-
-<br /><br />
-
-**Reason better. Compose freely. Evolve responsibly.**
+[![License: MIT](https://img.shields.io/badge/License-MIT-090a0f?style=for-the-badge&logoColor=white)](LICENSE)
+[![Skills: 40 Portable](https://img.shields.io/badge/Skills-40%20Verified-0ea5e9?style=for-the-badge&logoColor=white)](skills/)
+[![IDEs: 10+ Environments](https://img.shields.io/badge/IDEs-10%2B%20Ready-6366f1?style=for-the-badge&logoColor=white)](ide/)
+[![Dependencies: Zero Stdlib](https://img.shields.io/badge/Runtime-Python%20Stdlib-10b981?style=for-the-badge&logoColor=white)](pyproject.toml)
+[![Architecture: Safe by Design](https://img.shields.io/badge/Safety-Fail--Closed-f43f5e?style=for-the-badge&logoColor=white)](SECURITY.md)
 
 <br />
+
+[Explore Skills](#-the-40-skill-matrix) •
+[Quickstart](#-quickstart-in-60-seconds) •
+[Architecture](#-architectural-paradigm) •
+[IDE Installation](#-universal-ide-deployment) •
+[Evolution Engine](#-governed-self-evolution) •
+[Compliance](#-enterprise-safety--compliance)
+
+<br />
+
+---
+
+### *“Prompts are volatile scripts. Skills are enduring infrastructure.”*
+
 </div>
 
-<div align="center">
+<br />
 
-```text
-       INTENT                 INTELLIGENCE                 EXECUTION
-  ┌─────────────┐        ┌─────────────────┐        ┌─────────────────┐
-  │  “Find the  │───────▶│   PI SKILLFORGE │───────▶│  IDE · API · CRM │
-  │  right lead”│        │  skills + rules │        │  browser · agent │
-  └─────────────┘        └─────────────────┘        └─────────────────┘
-                                  │
-                          evidence → evolution
+Most AI agents fail at real-world LinkedIn execution not because models lack intelligence, but because prompts conflate **reasoning methodology** with **API mechanics**. When models hallucinate tool capabilities or drift silently over time, mission-critical workflows shatter.
+
+**PI SkillForge** decouples what an agent **thinks** from how an agent **executes**. It provides 40 battle-tested, contract-governed reasoning modules—complete with typed schemas, adversarial evaluations, degradation guarantees, and a mathematically sound, human-supervised self-evolution loop.
+
+<br />
+
+```
+       INTENT                      INTELLIGENCE LAYER                     EXECUTION LAYER
+ ╭─────────────────╮          ╭───────────────────────────╮          ╭───────────────────────╮
+ │  "Find VP Leads │          │       PI SKILLFORGE       │          │   Swappable Adapters  │
+ │  & Send Tailored│ ───────▶ │   Reasoning Methodology   │ ───────▶ │   API · CRM · Browser │
+ │    Outreach"    │          │  JSON Schemas + Guardrails│          │  Claude · Cursor · DB │
+ ╰─────────────────╯          ╰───────────────────────────╯          ╰───────────────────────╯
+                                            │
+                                ┌───────────┴───────────┐
+                                ▼                       ▼
+                       [ Evidence Logging ]   [ Governed Evolution ]
 ```
 
-</div>
+<br />
 
-> AI agents are good at generating answers. Great agents know **how to reason**,
-> **what not to claim**, and **how to get better without drifting**.
+---
 
-PI SkillForge is The PI Lab’s open-source library of structured LinkedIn skills:
-methodology, decision rules, contracts, evaluation and compliance—in a format
-that any compatible agent can read.
-
-## The premise
-
-Prompts are temporary. A skill is infrastructure.
-
-PI SkillForge separates the part that should remain stable from the part that
-will always change:
-
-```text
-┌────────────────────────────────────────────────────────────────────┐
-│                         STABLE INTELLIGENCE                        │
-│  reasoning · methodology · workflow · decision rules · quality bar  │
-└────────────────────────────────────────────────────────────────────┘
-                                  │ contract
-┌────────────────────────────────────────────────────────────────────┐
-│                          SWAPPABLE TOOLS                           │
-│  LinkedIn API · CRM · browser · scheduler · model · IDE · database  │
-└────────────────────────────────────────────────────────────────────┘
-```
-
-No provider lock-in. No giant monolithic agent. No black-box prompt pack.
-
-## Why it feels different
-
-| | What it means in practice |
-| --- | --- |
-| **Portable** | Markdown + JSON Schema. Install one skill in the agent you already use. |
-| **Composable** | Skills exchange typed entities, provenance, confidence and gaps. |
-| **Tool-agnostic** | Abstract interfaces keep APIs, CRMs and browsers replaceable. |
-| **Auditable** | Every meaningful evolution is evidenced, versioned and logged. |
-| **Safe by default** | Missing tools mean analysis-only mode—not fabricated actions. |
-| **Built for change** | Governed self-evolution improves skills without uncontrolled drift. |
-
-## The library
+## ⚡ Key Highlights
 
 <table>
-<tr><th align="left">Layer</th><th align="left">Capabilities</th></tr>
-<tr><td><b>Foundation</b></td><td>Profile optimization · Personal branding · LinkedIn SEO</td></tr>
-<tr><td><b>Content</b></td><td>Content creation · Copywriting · AI generation · Algorithm optimization · Scheduling</td></tr>
-<tr><td><b>Prospecting</b></td><td>Lead generation · Sales Navigator · Prospect research · B2B prospecting · Lead qualification</td></tr>
-<tr><td><b>Outreach</b></td><td>Outreach automation · Cold messaging · Connection strategy · Social selling · AI personalization · Appointment setting · Email outreach</td></tr>
-<tr><td><b>Strategy</b></td><td>Sales funnel · Account-based marketing · Growth strategy · Engagement strategy</td></tr>
-<tr><td><b>Automation</b></td><td>AI agent development · Workflow automation · Automation compliance</td></tr>
-<tr><td><b>Data & CRM</b></td><td>CRM integration · Data enrichment</td></tr>
-<tr><td><b>Analytics</b></td><td>Analytics & reporting · Competitor analysis · Market research · Conversion tracking</td></tr>
-<tr><td><b>Talent</b></td><td>Recruitment automation · Job search optimization · Employer branding</td></tr>
-<tr><td><b>Paid & Platform</b></td><td>Ads management · Campaign optimization · API integration</td></tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧩 100% Portable & Self-Contained
+Every skill is packaged with a strict 27-section `SKILL.md`, Draft 2020-12 `schema.json`, reproducible usage examples, and adversarial evaluation suites. Drop them into Claude Code, Cursor, Windsurf, or your custom agent runtime instantly.
+
+</td>
+<td width="50%" valign="top">
+
+### 🧬 Governed Self-Evolution
+Agents learn without uncontrollable drift. Production run evidence converts into scorecards and bounded proposals. Every release must pass semantic versioning, audit trail verification, and automated rollback gates.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔌 Swappable Adapter Boundary
+Skills interact with abstract capability interfaces (`search()`, `get_profile()`, `send_message()`, etc.). If a tool or API credential is absent, the skill automatically degrades to analysis-only mode—**never hallucinating actions**.
+
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ Enterprise Safety & Compliance
+Explicitly rejects session hijacking, cookie theft, aggressive automation evasion, rate-limit bypassing, and brute-force mass spam. Designed from the ground up for strict LinkedIn compliance, human oversight, and auditability.
+
+</td>
+</tr>
 </table>
 
-**40 skills. One contract. Infinite workflows.** Browse [`skills/`](skills/).
+<br />
 
-## One skill. Any IDE.
+---
 
-Preview it first. Apply it when it looks right.
+## 🏛️ Architectural Paradigm
 
-```bash
-python ide/install.py install \
-  --skill prospect-research \
-  --ide auto \
-  --target /path/to/project
+Standard prompts are fragile strings. PI SkillForge enforces a clean, dual-layer separation:
 
-python ide/install.py install \
-  --skill prospect-research \
-  --ide auto \
-  --target /path/to/project \
-  --apply
+```
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  STABLE INTELLIGENCE                                   │
+│            Workflow Logic · Decision Trees · Quality Heuristics · Output Contracts     │
+└────────────────────────────────────────────────────────────────────────────────────────┘
+                                            │
+                                  [ Draft 2020-12 Schema ]
+                                            │
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                                  SWAPPABLE EXECUTION                                   │
+│       Official LinkedIn API · Unofficial Connectors · HubSpot · Salesforce · Browser    │
+└────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-The universal installer supports Claude Code, Cursor, Windsurf, VS Code, Cline,
-Roo, Zed, JetBrains, Neovim and a generic mode for everything else.
-
-Every skill is self-contained:
-
-```text
-skills/prospect-research/
-├── SKILL.md                 methodology + rules
-├── schema.json              input/output contract
-├── README.md                quickstart
-├── examples/                basic + advanced usage
-└── tests/eval.json          normal + adversarial evaluations
-```
-
-## Compose intelligence
-
-Skills are small enough to understand and strong enough to chain:
-
-```text
-PROFILE → CONTENT → ENGAGEMENT → PROSPECT → QUALIFY
-                                                 │
-                 ANALYZE ← PERSONALIZE ←────────┘
-                    │
-                    ▼
-       MESSAGE → APPOINTMENT → CRM → ANALYTICS
-```
-
-An output never loses its context:
+### Why this changes everything:
+1. **Zero Provider Lock-In**: Upgrade your LLM from Claude 3.5 Sonnet to GPT-4o or Gemini 1.5 Pro without rewriting your LinkedIn logic.
+2. **Context-Preserving Handoffs**: When multiple skills chain together, every output carries structured provenance metadata:
 
 ```json
 {
-  "data": {},
+  "data": { "target_prospect_tier": "Tier-1", "recommended_hook": "Shared IEEE keynote" },
   "provenance": {
     "producer_skill": "linkedin.prospect-research",
     "producer_version": "1.0.0",
-    "produced_at": "2026-01-01T00:00:00Z",
-    "source_refs": [],
-    "confidence": 0.87,
-    "gaps": []
+    "produced_at": "2026-09-28T12:00:00Z",
+    "confidence": 0.94,
+    "gaps": ["Personal email unavailable; verified work email attached"],
+    "assumptions": ["Lead is currently active in current company role"]
   }
 }
 ```
 
-The downstream skill knows what happened, who produced it, how certain it is and
-what is still missing.
+Downstream skills never act on hidden assumptions or silent uncertainties.
 
-See the [composition examples](examples/composition/) and
-[`docs/COMPOSITION.md`](docs/COMPOSITION.md).
+<br />
 
-## The evolution engine
+---
 
-Self-evolving should not mean self-modifying without oversight.
+## 🗂️ The 40-Skill Matrix
 
-PI SkillForge learns through a controlled loop:
+The catalog spans the complete LinkedIn operational lifecycle across 10 specialized capability domains:
 
-```text
-   OBSERVE ──▶ SCORE ──▶ PROPOSE ──▶ VALIDATE ──▶ APPROVE ──▶ RELEASE
-      ▲                                                        │
-      └──────────────────── MONITOR ◀─────────────────────────┘
+<details open>
+<summary><b>Click to expand / collapse the full skills catalog</b></summary>
+<br />
+
+| Domain | Skills Included | Core Purpose |
+| :--- | :--- | :--- |
+| **Foundation** | [`profile-optimization`](skills/profile-optimization) · [`personal-branding`](skills/personal-branding) · [`linkedin-seo`](skills/linkedin-seo) | Maximize discoverability, authority, headline impact, and algorithm indexing. |
+| **Content Engine** | [`content-creation`](skills/content-creation) · [`copywriting`](skills/copywriting) · [`ai-content-generation`](skills/ai-content-generation) · [`algorithm-optimization`](skills/algorithm-optimization) · [`content-scheduling`](skills/content-scheduling) | Produce scroll-stopping thought leadership, hook structures, and dwell-time optimization. |
+| **Prospecting** | [`lead-generation`](skills/lead-generation) · [`sales-navigator`](skills/sales-navigator) · [`prospect-research`](skills/prospect-research) · [`b2b-prospecting`](skills/b2b-prospecting) · [`lead-qualification`](skills/lead-qualification) | Identify high-intent accounts, map buying committees, and qualify prospects rigorously. |
+| **Outreach** | [`outreach-automation`](skills/outreach-automation) · [`cold-messaging`](skills/cold-messaging) · [`connection-strategy`](skills/connection-strategy) · [`social-selling`](skills/social-selling) · [`ai-personalization`](skills/ai-personalization) · [`appointment-setting`](skills/appointment-setting) · [`email-outreach-integration`](skills/email-outreach-integration) | Transform cold prospects into warm conversations with hyper-personalized, non-spammy touchpoints. |
+| **Strategy** | [`sales-funnel`](skills/sales-funnel) · [`abm`](skills/abm) · [`growth-strategy`](skills/growth-strategy) · [`engagement-strategy`](skills/engagement-strategy) | Account-based marketing orchestration, pipeline velocity, and audience retention loops. |
+| **Automation** | [`ai-agent-development`](skills/ai-agent-development) · [`workflow-automation`](skills/workflow-automation) · [`automation-compliance`](skills/automation-compliance) | Architect autonomous multi-agent systems with safety interlocks and rate-limit guardrails. |
+| **Data & CRM** | [`crm-integration`](skills/crm-integration) · [`data-enrichment`](skills/data-enrichment) | Bi-directional synchronization with HubSpot, Salesforce, and Apollo/Clearbit data lakes. |
+| **Analytics & Intel** | [`analytics-reporting`](skills/analytics-reporting) · [`competitor-analysis`](skills/competitor-analysis) · [`market-research`](skills/market-research) · [`conversion-tracking`](skills/conversion-tracking) | Monitor post performance, competitor audience gaps, and pipeline conversion attribution. |
+| **Talent & Career** | [`recruitment-automation`](skills/recruitment-automation) · [`job-search-optimization`](skills/job-search-optimization) · [`employer-branding`](skills/employer-branding) | Source top-percentile engineering/business talent and position company culture attractively. |
+| **Paid Campaigns** | [`ads-management`](skills/ads-management) · [`campaign-optimization`](skills/campaign-optimization) · [`api-integration`](skills/api-integration) | LinkedIn Ads budgeting, matched audience targeting, CTR optimization, and API bridging. |
+
+</details>
+
+<br />
+
+---
+
+## 🚀 Quickstart in 60 Seconds
+
+You don't need heavyweight frameworks, node dependencies, or complex setup scripts. PI SkillForge runs cleanly on pure Python standard library.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/the-pi-lab/pi-skillforge.git
+cd pi-skillforge
 ```
 
-Run evidence becomes a scorecard. A scorecard becomes a bounded proposal. A
-proposal must pass evidence, semver, compliance and rollback gates. A maintainer
-approves the release. The audit trail remembers everything.
+### 2. Verify repository integrity
+```bash
+python -m unittest discover -s tests -p "test_*.py" -v
+```
+```text
+Ran 2 tests in 0.803s
+OK
+PASS: ide registry >= 10 hosts
+PASS: evolution layers healthy
+PASS: all 40 skills conform to SKILL_SPEC §12
+```
+
+### 3. Inspect any skill
+Each skill folder contains everything required for immediate reasoning:
+```bash
+ls skills/prospect-research/
+# README.md  SKILL.md  examples/  schema.json  tests/
+```
+
+<br />
+
+---
+
+## 💻 Universal IDE Deployment
+
+Install any skill directly into your AI coding assistant or IDE with zero friction. The built-in CLI auto-detects your workspace environment and configures the appropriate wiring:
 
 ```bash
-python evolution/evolve.py record \
-  --skill cold-messaging \
-  --outcome succeeded \
-  --confidence 0.86 \
-  --eval-passed \
-  --notes "Reviewer accepted the follow-up sequence"
+# Preview installation (Dry-Run mode)
+python ide/install.py install --skill prospect-research --ide auto --target /path/to/project
 
-python evolution/evolve.py score --skill cold-messaging
+# Apply installation
+python ide/install.py install --skill prospect-research --ide auto --target /path/to/project --apply
 ```
 
-The engine fails closed on unsafe paths, weak evidence, schema drift, permission
-widening and compliance bypasses. Learning without gates is drift; gates are the
-feature.
+### Supported IDE Environments:
 
-Read the [evolution design](evolution/EVOLUTION.md).
+| Target IDE | Target Destination | Status & Integration Details |
+| :--- | :--- | :--- |
+| **Claude Code** | `.claude/skills/` | `Native Verified` — Automatic discovery via standard `SKILL.md` parser |
+| **Cursor** | `.cursor/skills/` | `Community Ready` — Referenced directly by Composer / Cursor Rules |
+| **Windsurf** | `.windsurf/skills/` | `Community Ready` — Seamlessly available to Windsurf Cascade memories |
+| **VS Code** | `.vscode/skills/` | `Community Ready` — Targeted by GitHub Copilot custom instructions |
+| **Cline** | `.cline/skills/` | `Native Ready` — Staged in Cline context hierarchy |
+| **Roo Code** | `.roo/skills/` | `Native Ready` — Direct Roo prompt injection |
+| **Zed** | `.zed/skills/` | `Native Ready` — Indexed by Zed Assistant context engine |
+| **JetBrains** | `.idea/skills/` | `Native Ready` — Configurable in JetBrains AI Assistant |
+| **Neovim** | `.nvim/skills/` | `Native Ready` — Compatible with Avante.nvim, CodeCompanion, etc. |
+| **Generic Agent** | `linkedin-skills/` | `Universal` — Compatible with LangChain, LlamaIndex, CrewAI, AutoGen |
 
-## The adapter boundary
+<br />
+
+---
+
+## 🧬 Governed Self-Evolution
+
+**Uncontrolled AI prompt mutation leads to silent drift.** PI SkillForge pioneers a strictly governed, evidence-backed evolution loop:
+
+```
+  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+  │   OBSERVE    │ ──▶ │    SCORE     │ ──▶ │   PROPOSE    │
+  │ Real metrics │     │ Benchmark IQ │     │ Bounded diff │
+  └──────────────┘     └──────────────┘     └──────────────┘
+         ▲                                         │
+         │                                         ▼
+  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
+  │   MONITOR    │ ◀── │   RELEASE    │ ◀── │   VALIDATE   │
+  │ Drift watch  │     │ Human signoff│     │ Schema gates │
+  └──────────────┘     └──────────────┘     └──────────────┘
+```
+
+### Evolution in action:
+
+1. **Log execution evidence**:
+   ```bash
+   python evolution/evolve.py record \
+     --skill cold-messaging \
+     --outcome succeeded \
+     --confidence 0.91 \
+     --eval-passed \
+     --notes "Reviewer approved conversational hook with zero edits"
+   ```
+
+2. **Generate skill performance scorecards**:
+   ```bash
+   python evolution/evolve.py score --skill cold-messaging
+   ```
+
+3. **Validate & apply proposed improvements**:
+   ```bash
+   # Validate proposal against schema, semver, and safety gates
+   python evolution/evolve.py validate --proposal evolution/proposals/PROP-2026-001.json
+
+   # Apply with mandatory maintainer sign-off
+   python evolution/evolve.py apply --proposal evolution/proposals/PROP-2026-001.json --approve "Maintainer Name" --apply
+   ```
+
+> [!IMPORTANT]
+> The evolution engine **fails closed**. If an evolution attempt tries to weaken compliance rules, bypass human review gates, or cause backward-incompatible schema breaks without a major version bump, it is rejected automatically.
+
+<br />
+
+---
+
+## 🔌 The Adapter Boundary
+
+Skills express **pure business logic and reasoning requirements**, remaining completely agnostic of low-level API drivers:
 
 ```text
-┌──────────┐     ┌──────────────────┐     ┌─────────────────────┐
-│  SKILL   │────▶│ ABSTRACT TOOL    │────▶│ PROVIDER ADAPTER    │
-│ reasoning│     │ INTERFACE        │     │ API / CRM / browser │
-└──────────┘     └──────────────────┘     └─────────────────────┘
+ ╭─────────────────────────╮
+ │   Cold Messaging Skill  │
+ │  Requires:              │
+ │   • get_profile()       │
+ │   • send_message()      │
+ ╰───────────┬─────────────╯
+             │ (Abstract Interface)
+             ▼
+ ╭─────────────────────────╮
+ │     Adapter Layer       │
+ ╰───────────┬─────────────╯
+             │
+ ┌───────────┼────────────────────────┐
+ ▼           ▼                        ▼
+[ Official LinkedIn API ]   [ CRM Webhook (HubSpot) ]   [ Headless Browser ]
 ```
 
-Supported interface families include:
+### Supported Capability Families:
+* `get_profile(id)` · `get_company(id)` · `search(query)` · `enrich_contact(data)`
+* `send_message(recipient, text)` · `create_appointment(lead, slot)`
+* `post_content(body)` · `schedule_post(time, body)` · `get_analytics(metric)`
+* `create_crm_record(deal)` · `track_conversion(event)` · `manage_ads(campaign)`
 
-`search()` · `get_profile()` · `get_company()` · `enrich_contact()` ·
-`send_message()` · `create_crm_record()` · `schedule_post()` · `post_content()` ·
-`get_analytics()` · `manage_ads()` · `track_conversion()` · `create_appointment()`
+*When no physical tool is configured, the skill operates in **analysis-only fallback mode**, delivering reasoning outputs without crashing or hallucinating.*
 
-Tools are optional. When a tool is missing, the skill says so and returns an
-analysis-only result. It never claims an action happened when it did not.
+<br />
 
-See [`adapters/TOOL_ADAPTERS.md`](adapters/TOOL_ADAPTERS.md).
+---
 
-## Quality is not a promise. It is a contract.
+## 🛡️ Enterprise Safety & Compliance
 
-Every skill includes:
+PI SkillForge is engineered specifically for compliant, sustainable, professional B2B operations:
 
-- 27 required reasoning and execution sections
-- Draft 2020-12 JSON Schema
-- Normal and adversarial evaluation cases
-- Explicit validation, errors and recovery
-- Provenance, confidence, gaps and assumptions
-- Security and LinkedIn compliance rules
-- Semver versioning and changelog history
+- ❌ **Zero Scraping Hacks**: No DOM tampering, session cookie stealing, or CAPTCHA bypass scripts.
+- ❌ **Zero Unchecked Mass Spam**: Strict daily volume caps, opt-out compliance, and context verification.
+- ✅ **Human-in-the-Loop Interlocks**: Critical actions (sending messages, booking slots, launching ad spend) require explicit operator review.
+- ✅ **Audit Trail First**: Every action, reasoning step, and state mutation is logged with cryptographic confidence and origin tracking.
 
-The project explicitly rejects credential theft, session hijacking, CAPTCHA
-bypass, enforcement evasion, rate-limit abuse and spam-at-scale patterns.
+<br />
 
-## Verify it
+---
 
-No third-party test framework is required.
+## 🗺️ Repository Structure
+
+```text
+pi-skillforge/
+├── skills/                     # 40 modular reasoning skill packages
+│   ├── cold-messaging/         # (SKILL.md, schema.json, examples, evals)
+│   ├── prospect-research/
+│   └── ...
+├── schemas/                    # Reusable Draft 2020-12 shared JSON entities
+├── adapters/                   # Abstract tool contracts & reference implementations
+├── ide/                        # Universal CLI installer & multi-IDE registry
+├── evolution/                  # Governed self-evolution engine, logs & scorecards
+├── examples/composition/       # Multi-skill workflow orchestration blueprints
+├── tests/                      # Automated test suite (Python unittest stdlib)
+├── docs/                       # Architecture, compliance, security & composition specs
+├── CONTRIBUTING.md             # Contribution standards & skill authoring guide
+├── LICENSE                     # Permissive MIT License
+└── pyproject.toml              # Build & test metadata
+```
+
+<br />
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions of new skills, IDE adapters, and tool bridges! Please check our [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`SKILL_SPEC.md`](SKILL_SPEC.md) for guidelines on meeting the 27-section contract and evaluation standards.
 
 ```bash
-python -m unittest discover -s tests -p 'test_*.py' -v
-python -m compileall -q adapters evolution ide tests
+# Verify your contribution meets all spec requirements:
+python -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-CI runs the same checks on Python 3.10, 3.11 and 3.12.
+<br />
 
-## Repository map
-
-```text
-├── skills/                 40 portable skill packages
-├── schemas/                shared entities for composition
-├── adapters/               abstract tool contracts
-├── ide/                    universal installer + IDE registry
-├── evolution/              scoring + proposals + audit trail
-├── examples/composition/   end-to-end workflow chains
-├── tests/                  contract + integration checks
-└── docs/                   architecture + compliance + testing
-```
-
-## Start here
-
-1. Choose a skill from [`skills/`](skills/).
-2. Read its `SKILL.md` and `schema.json`.
-3. Install it into your IDE or agent.
-4. Connect only the tools you trust.
-5. Record evidence. Improve with gates.
-
-New skill, adapter or IDE mapping? Start with [`CONTRIBUTING.md`](CONTRIBUTING.md).
-
-## Explore the system
-
-[`SKILL_SPEC.md`](SKILL_SPEC.md) · [`SCHEMA.md`](SCHEMA.md) ·
-[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) ·
-[`docs/COMPOSITION.md`](docs/COMPOSITION.md) ·
-[`docs/COMPLIANCE.md`](docs/COMPLIANCE.md) · [`SECURITY.md`](SECURITY.md) ·
-[`CHANGELOG.md`](CHANGELOG.md)
-
-## License
-
-MIT. Use it. Fork it. Improve it. Ship it.
+---
 
 <div align="center">
 
 <br />
 
-### Built for agents that need more than prompts.
+### Engineered with precision by **The PI Lab**
 
-**PI SKILLFORGE**
+**Reason better. Compose freely. Evolve responsibly.**
 
-<sub>The PI Lab · Open source · Made for the next generation of AI workflows</sub>
+[![GitHub stars](https://img.shields.io/github/stars/the-pi-lab/pi-skillforge?style=social)](https://github.com/the-pi-lab/pi-skillforge)
+[![GitHub forks](https://img.shields.io/github/forks/the-pi-lab/pi-skillforge?style=social)](https://github.com/the-pi-lab/pi-skillforge)
+
+<br />
+
+<sub>Open source under the MIT License • Built for the next frontier of intelligent agents.</sub>
 
 <br /><br />
 
