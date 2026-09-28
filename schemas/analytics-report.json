@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/analytics-report.json",
+  "title": "AnalyticsReport",
+  "type": "object",
+  "properties": {
+    "window": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "recommendations": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

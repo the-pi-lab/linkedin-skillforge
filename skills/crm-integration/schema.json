@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/crm-integration.json",
+  "skill_id": "linkedin.crm-integration",
+  "title": "LinkedIn CRM Integration",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "entities": {
+          "type": "string",
+          "description": "Which LinkedIn entities to sync",
+          "minLength": 1
+        },
+        "crm": {
+          "type": "string",
+          "description": "CRM + objects available",
+          "minLength": 1
+        },
+        "rules": {
+          "type": "string",
+          "description": "Dedupe + conflict preferences"
+        }
+      },
+      "required": [
+        "entities",
+        "crm"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (CRMRecord)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.crm-integration"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

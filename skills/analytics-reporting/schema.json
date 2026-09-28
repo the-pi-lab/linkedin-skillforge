@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/analytics-reporting.json",
+  "skill_id": "linkedin.analytics-reporting",
+  "title": "LinkedIn Analytics and Reporting",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "metrics": {
+          "type": "string",
+          "description": "Raw metrics per motion + window",
+          "minLength": 1
+        },
+        "goals": {
+          "type": "string",
+          "description": "Targets/KPIs"
+        },
+        "context": {
+          "type": "string",
+          "description": "What changed (volume, offers, calendar)"
+        }
+      },
+      "required": [
+        "metrics"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (AnalyticsReport)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.analytics-reporting"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

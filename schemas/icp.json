@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/icp.json",
+  "title": "ICP",
+  "type": "object",
+  "properties": {
+    "industries": {
+      "type": "array"
+    },
+    "titles": {
+      "type": "array"
+    },
+    "geos": {
+      "type": "array"
+    },
+    "exclusions": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

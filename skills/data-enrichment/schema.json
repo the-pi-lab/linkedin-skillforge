@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/data-enrichment.json",
+  "skill_id": "linkedin.data-enrichment",
+  "title": "LinkedIn Data Enrichment",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "records": {
+          "type": "string",
+          "description": "Partial Lead/Person[]",
+          "minLength": 1
+        },
+        "fields_wanted": {
+          "type": "string",
+          "description": "Fields to fill",
+          "minLength": 1
+        },
+        "sources_allowed": {
+          "type": "string",
+          "description": "profile | company | web | provider"
+        },
+        "thresholds": {
+          "type": "string",
+          "description": "Min confidence per field"
+        }
+      },
+      "required": [
+        "records",
+        "fields_wanted"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (Person)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.data-enrichment"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

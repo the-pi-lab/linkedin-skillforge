@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/ai-agent-development.json",
+  "skill_id": "linkedin.ai-agent-development",
+  "title": "LinkedIn AI Agent Development",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "job": {
+          "type": "string",
+          "description": "What the agent should/shouldn't do",
+          "minLength": 1
+        },
+        "tools_available": {
+          "type": "string",
+          "description": "Interfaces + approval modes",
+          "minLength": 1
+        },
+        "constraints": {
+          "type": "string",
+          "description": "Caps, data boundaries, policies",
+          "minLength": 1
+        },
+        "success": {
+          "type": "string",
+          "description": "Measurable outcomes"
+        }
+      },
+      "required": [
+        "job",
+        "tools_available",
+        "constraints"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (AutomationWorkflow)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.ai-agent-development"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

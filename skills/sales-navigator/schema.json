@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/sales-navigator.json",
+  "skill_id": "linkedin.sales-navigator",
+  "title": "LinkedIn Sales Navigator",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "icp": {
+          "type": "string",
+          "description": "ICP entity or hints",
+          "minLength": 1
+        },
+        "navigator_access": {
+          "type": "string",
+          "description": "What tier/features available"
+        },
+        "exclusions": {
+          "type": "string",
+          "description": "Blacklists, customers, competitors"
+        },
+        "capacity": {
+          "type": "string",
+          "description": "Leads/week review capacity"
+        }
+      },
+      "required": [
+        "icp"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (Lead)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.sales-navigator"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

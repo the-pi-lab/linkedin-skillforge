@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/content-post.json",
+  "title": "ContentPost",
+  "type": "object",
+  "properties": {
+    "hook": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "format": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

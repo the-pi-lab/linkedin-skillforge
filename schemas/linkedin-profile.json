@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/linkedin-profile.json",
+  "title": "LinkedInProfile",
+  "type": "object",
+  "properties": {
+    "handle": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "array"
+    },
+    "skills": {
+      "type": "array"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

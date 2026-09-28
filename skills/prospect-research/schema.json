@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/prospect-research.json",
+  "skill_id": "linkedin.prospect-research",
+  "title": "LinkedIn Prospect Research",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "description": "Person handle/URN or company slug + context",
+          "minLength": 1
+        },
+        "depth": {
+          "type": "string",
+          "description": "quick | standard | deep"
+        },
+        "questions": {
+          "type": "string",
+          "description": "What must be answered (role, stack, triggers)"
+        },
+        "sources_allowed": {
+          "type": "string",
+          "description": "profile | company | web | crm"
+        }
+      },
+      "required": [
+        "subject"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (ResearchResult)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.prospect-research"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

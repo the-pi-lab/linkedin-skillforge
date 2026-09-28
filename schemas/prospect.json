@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/prospect.json",
+  "title": "Prospect",
+  "type": "object",
+  "properties": {
+    "person": {
+      "type": "object"
+    },
+    "fit_score": {
+      "type": "number"
+    },
+    "intent_signals": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": true
+}

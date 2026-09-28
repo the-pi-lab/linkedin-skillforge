@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/opportunity.json",
+  "title": "Opportunity",
+  "type": "object",
+  "properties": {
+    "prospect_ref": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "next_step": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

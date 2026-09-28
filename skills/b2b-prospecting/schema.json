@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/skills/b2b-prospecting.json",
+  "skill_id": "linkedin.b2b-prospecting",
+  "title": "LinkedIn B2B Prospecting",
+  "type": "object",
+  "properties": {
+    "Input": {
+      "type": "object",
+      "properties": {
+        "icp": {
+          "type": "string",
+          "description": "ICP entity",
+          "minLength": 1
+        },
+        "accounts": {
+          "type": "string",
+          "description": "Candidate companies/context",
+          "minLength": 1
+        },
+        "capacity": {
+          "type": "string",
+          "description": "Touches/week"
+        },
+        "proof": {
+          "type": "string",
+          "description": "Relevant wins per segment"
+        }
+      },
+      "required": [
+        "icp",
+        "accounts"
+      ],
+      "additionalProperties": true
+    },
+    "Output": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": "Skill entities (Prospect)"
+        },
+        "provenance": {
+          "type": "object",
+          "properties": {
+            "producer_skill": {
+              "const": "linkedin.b2b-prospecting"
+            },
+            "producer_version": {
+              "type": "string"
+            },
+            "produced_at": {
+              "type": "string"
+            },
+            "source_refs": {
+              "type": "array"
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "gaps": {
+              "type": "array"
+            },
+            "assumptions": {
+              "type": "array"
+            }
+          },
+          "required": [
+            "producer_skill",
+            "confidence",
+            "gaps"
+          ]
+        }
+      },
+      "required": [
+        "data",
+        "provenance"
+      ],
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "Input",
+    "Output"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/lead.json",
+  "title": "Lead",
+  "type": "object",
+  "properties": {
+    "person": {
+      "type": "object"
+    },
+    "source": {
+      "type": "string"
+    },
+    "captured_at": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

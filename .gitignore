@@ -1,0 +1,22 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local evolution state (keep schemas and docs tracked)
+evolution/runs.jsonl
+evolution/proposals/*.json
+!evolution/proposals/.gitkeep
+
+# Editors and OS files
+.venv/
+venv/
+.env
+.env.*
+.idea/workspace.xml
+.vscode/*.local.json
+Thumbs.db
+Desktop.ini

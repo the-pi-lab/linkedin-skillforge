@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://linkedin-skills.local/schemas/company.json",
+  "title": "Company",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "size_band": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
